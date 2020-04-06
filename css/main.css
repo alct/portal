@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 106.25%;
+}
+body {
+  font-family: Avenir Next, Avenir, sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 48rem;
+  padding: 2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+.filter {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>') no-repeat .5rem center;
+  background-size: 1.1rem 1.1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: .5rem .5rem .5rem 2.1rem;
+  width: 100%;
+}
+.item {
+  margin: 1rem 0;
+  padding: 1rem;
+  position: relative;
+}
+.item *:first-child {
+  margin-top: 0;
+}
+.item *:last-child {
+  margin-bottom: 0;
+}
+.item a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+.item a::before {
+  border: solid 2px rgba(0, 0, 0, .1);
+  border-radius: 3px;
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.item a:hover,
+.item a:focus {
+  color: #000;
+}
+.item a:hover::before,
+.item a:focus::before {
+  border-color: #000;
+}
+.keywords {
+  color: rgba(0, 0, 0, .7);
+  font-size: .8rem;
+  margin-top: 0;
+}
+.keywords p,
+.keywords ul {
+  display: inline-block;
+}
+.keywords ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.keywords li {
+  display: inline-flex;
+  padding: 0 .2rem;
+}
+.hidden {
+  display: none;
+}
